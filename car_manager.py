@@ -14,6 +14,7 @@ class CarManager:
         # to get all the states, put them in a list and move each.
         # think in terms of this.
         self.cars = []
+        self.car_speed = STARTING_MOVE_DISTANCE
 
     # create a car and append to cars list
     def create_car(self):
@@ -35,4 +36,4 @@ class CarManager:
             car.backward(STARTING_MOVE_DISTANCE)
 
     def increase_speed(self):
-        pass
+        self.car_speed += MOVE_INCREMENT
